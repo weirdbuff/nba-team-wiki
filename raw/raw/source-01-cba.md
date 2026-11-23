@@ -33,9 +33,9 @@ Teams must consider salary regulations when signing players, extending contracts
 4. The CBA is essential for understanding NBA team management.
 
 ## 5. Related Wiki Pages
-- [[salary-cap]]
-- [[team-management]]
-- [[trades-and-draft]]
+- [Salary Cap](../wiki/salary-cap.md)
+- [Team Management](../wiki/team-management.md)
+- [Trades and Draft](../wiki/trades-and-draft.md)
 
 ## 6. Source Verification
 - Source type: Official NBPA document
