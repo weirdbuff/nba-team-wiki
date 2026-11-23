@@ -30,8 +30,8 @@ This folder records the original sources used to build the Wiki.
 - URL: https://www.nba.com/news/nba-draft-lottery-explainer
 
 ## Ingestion Status
-- [ ] Source 01 ingested
-- [ ] Source 02 ingested
-- [ ] Source 03 ingested
-- [ ] Source 04 ingested
-- [ ] Source 05 ingested
+- [x] Source 01 ingested
+- [x] Source 02 ingested
+- [x] Source 03 ingested
+- [x] Source 04 ingested
+- [x] Source 05 ingested
