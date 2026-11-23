@@ -1,0 +1,195 @@
+
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NBA 球隊經營與數據分析</title>
+<style>
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: Arial, "Noto Sans TC", sans-serif;
+  background: #101827;
+  color: #f8fafc;
+}
+.slide {
+  display: none;
+  min-height: 100vh;
+  padding: 9vh 10vw;
+  justify-content: center;
+  flex-direction: column;
+}
+.slide.active { display: flex; }
+.tag { color: #f5a623; font-weight: bold; letter-spacing: 2px; }
+h1 { font-size: clamp(38px, 6vw, 72px); margin: 18px 0; }
+h2 { font-size: clamp(30px, 4vw, 48px); color: #f5a623; }
+p, li { font-size: clamp(18px, 2vw, 25px); line-height: 1.7; }
+ul { padding-left: 30px; }
+.highlight { color: #f5a623; }
+.card {
+  background: #1e293b;
+  border-left: 5px solid #f5a623;
+  padding: 18px 24px;
+  margin: 12px 0;
+  border-radius: 8px;
+}
+.controls {
+  position: fixed;
+  bottom: 20px;
+  right: 24px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+button {
+  border: 0;
+  border-radius: 7px;
+  padding: 12px 20px;
+  background: #f5a623;
+  color: #101827;
+  font-size: 16px;
+  cursor: pointer;
+}
+button:disabled { opacity: .4; cursor: default; }
+#counter { color: white; }
+a { color: #f5a623; }
+.footer { margin-top: 35px; color: #94a3b8; font-size: 15px; }
+</style>
+</head>
+<body>
+
+<section class="slide active">
+  <span class="tag">NBA FRONT OFFICE & ANALYTICS</span>
+  <h1>NBA 球隊經營<br><span class="highlight">與數據分析</span></h1>
+  <p>從球隊管理、薪資制度到球員數據，理解一支 NBA 球隊如何建立競爭力。</p>
+  <div class="footer">NBA Team Management & Analytics</div>
+</section>
+
+<section class="slide">
+  <span class="tag">01 / OVERVIEW</span>
+  <h2>球隊經營在做什麼？</h2>
+  <p>NBA 球隊不只是場上的五名球員，也是一個需要長期規劃的組織。</p>
+  <div class="card"><strong>人員管理：</strong>招募球員、教練與管理團隊。</div>
+  <div class="card"><strong>財務管理：</strong>控制薪資、評估合約與交易成本。</div>
+  <div class="card"><strong>競爭策略：</strong>在短期戰績與長期發展間取得平衡。</div>
+</section>
+
+<section class="slide">
+  <span class="tag">02 / FRONT OFFICE</span>
+  <h2>誰在管理一支球隊？</h2>
+  <ul>
+    <li><span class="highlight">Owner：</span>球隊所有者，負責重大方向與資源支持。</li>
+    <li><span class="highlight">General Manager：</span>總管，負責球員交易、選秀與陣容規劃。</li>
+    <li><span class="highlight">Basketball Operations：</span>籃球營運部門，支援球隊日常決策。</li>
+    <li><span class="highlight">Coaching Staff：</span>教練團，負責訓練、戰術與場上調度。</li>
+  </ul>
+  <p>管理團隊必須讓球員配置、財務條件與球隊目標互相配合。</p>
+</section>
+
+<section class="slide">
+  <span class="tag">03 / SALARY CAP</span>
+  <h2>薪資上限與奢侈稅</h2>
+  <p>NBA 使用 Salary Cap 制度，限制球隊在球員薪資上的操作空間。</p>
+  <div class="card"><strong>Salary Cap：</strong>球隊薪資上限的制度基準。</div>
+  <div class="card"><strong>Luxury Tax：</strong>球隊薪資超過特定門檻時，可能需要支付的稅金。</div>
+  <div class="card"><strong>Aprons：</strong>第一與第二層 Apron 會帶來額外的交易與簽約限制。</div>
+  <p>重點：薪資規則不只影響花多少錢，也影響球隊能如何補強。</p>
+</section>
+
+<section class="slide">
+  <span class="tag">04 / PLAYER ANALYTICS</span>
+  <h2>數據如何評估球員？</h2>
+  <div class="card"><strong>TS%｜真實命中率：</strong>綜合考量兩分球、三分球與罰球的得分效率。</div>
+  <div class="card"><strong>USG%｜使用率：</strong>估計球員在場上進攻回合中的參與程度。</div>
+  <div class="card"><strong>eFG%｜有效命中率：</strong>反映三分球比兩分球多一分的價值。</div>
+  <div class="card"><strong>PACE｜節奏：</strong>估計球隊每 48 分鐘的回合數。</div>
+  <p>數據應搭配比賽情境解讀，不能只看單一指標。</p>
+</section>
+
+<section class="slide">
+  <span class="tag">05 / TRADES & DRAFT</span>
+  <h2>交易與選秀：建立陣容的工具</h2>
+  <ul>
+    <li><strong>交易：</strong>交換球員、選秀權或其他符合規則的資產。</li>
+    <li><strong>選秀：</strong>透過選秀權取得新秀，培養未來戰力。</li>
+    <li><strong>選秀樂透：</strong>決定部分未進入季後賽球隊的選秀順位。</li>
+  </ul>
+  <p>總管必須評估球員價值、合約成本、球隊需求與未來發展。</p>
+</section>
+
+<section class="slide">
+  <span class="tag">06 / TEAM BUILDING</span>
+  <h2>如何打造有競爭力的球隊？</h2>
+  <div class="card"><strong>Win Now：</strong>集中資源爭取近期競爭力。</div>
+  <div class="card"><strong>Rebuilding：</strong>累積年輕球員與選秀資產，建立長期基礎。</div>
+  <div class="card"><strong>Balanced Approach：</strong>兼顧即戰力與未來發展。</div>
+  <p>沒有適用所有球隊的唯一答案，策略取決於陣容、財務與時間規劃。</p>
+</section>
+
+<section class="slide">
+  <span class="tag">07 / CASE STUDY</span>
+  <h2>情境思考：球隊該如何補強？</h2>
+  <p>假設一支球隊有明星球員，但替補深度不足，且薪資空間有限。</p>
+  <ul>
+    <li>是否應該交易選秀權，換取即戰力？</li>
+    <li>是否應該保留資產，培養年輕球員？</li>
+    <li>補強後是否會受到奢侈稅或 Apron 限制？</li>
+  </ul>
+  <p class="highlight">決策需要同時考慮數據、財務與球隊目標。</p>
+</section>
+
+<section class="slide">
+  <span class="tag">08 / TAKEAWAYS</span>
+  <h2>重點整理</h2>
+  <ul>
+    <li>球隊經營是管理、財務與競爭策略的整合。</li>
+    <li>薪資制度會影響球隊補強的選項。</li>
+    <li>數據分析能協助評估球員，但不能取代情境判斷。</li>
+    <li>交易、選秀與陣容規劃需要兼顧現在與未來。</li>
+  </ul>
+  <p>NBA 球隊的競爭力，來自一連串彼此連動的管理決策。</p>
+</section>
+
+<section class="slide">
+  <span class="tag">REFERENCES</span>
+  <h2>延伸閱讀與 Wiki</h2>
+  <ul>
+    <li><a href="../wiki/index.md">NBA Team Wiki 首頁</a></li>
+    <li><a href="https://www.nbpa.com/cba" target="_blank">NBPA Collective Bargaining Agreement</a></li>
+    <li><a href="https://www.nba.com/stats/help/glossary" target="_blank">NBA Stats Glossary</a></li>
+    <li><a href="https://www.nba.com/stats/help/faq" target="_blank">NBA Stats FAQ</a></li>
+    <li><a href="https://www.nba.com/news/nba-draft-lottery-explainer" target="_blank">NBA Draft Lottery Explainer</a></li>
+  </ul>
+  <p>本簡報依據 Wiki 知識頁整理，詳細定義與來源請參考 Wiki。</p>
+</section>
+
+<div class="controls">
+  <button id="prev" onclick="changeSlide(-1)">上一頁</button>
+  <span id="counter">1 / 10</span>
+  <button id="next" onclick="changeSlide(1)">下一頁</button>
+</div>
+
+<script>
+const slides = document.querySelectorAll('.slide');
+let current = 0;
+function showSlide(index) {
+  slides[current].classList.remove('active');
+  current = Math.max(0, Math.min(index, slides.length - 1));
+  slides[current].classList.add('active');
+  document.getElementById('counter').textContent =
+    `${current + 1} / ${slides.length}`;
+  document.getElementById('prev').disabled = current === 0;
+  document.getElementById('next').disabled = current === slides.length - 1;
+}
+function changeSlide(step) {
+  showSlide(current + step);
+}
+document.addEventListener('keydown', event => {
+  if (event.key === 'ArrowRight') changeSlide(1);
+  if (event.key === 'ArrowLeft') changeSlide(-1);
+});
+showSlide(0);
+</script>
+</body>
+</html>
